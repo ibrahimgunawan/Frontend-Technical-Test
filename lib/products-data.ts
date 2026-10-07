@@ -1,0 +1,86 @@
+import type { Product } from "@/types";
+
+export type { Product };
+
+export const productsData: Product[] = [
+  {
+    id: 1,
+    name: "FOOM Pod X - Space Gray",
+    category: "Pod",
+    price: 170000,
+    stock: 24,
+    image: "/products/pod-x-space-gray.png",
+  },
+  {
+    id: 2,
+    name: "FOOM Pod X - Absolute Black",
+    category: "Pod",
+    price: 170000,
+    stock: 18,
+    image: "/products/pod-x-absolute-black.png",
+  },
+  {
+    id: 3,
+    name: "FOOM Pod X Signature - White Crystal",
+    category: "Pod",
+    price: 290000,
+    stock: 12,
+    image: "/products/signature-white-crystal.png",
+  },
+  {
+    id: 4,
+    name: "FOOM Pod Y Bundling Liquid 15 mL - Onyx Black",
+    category: "Pod Bundle",
+    price: 300000,
+    stock: 10,
+    image: "/products/pod-x-absolute-black.png",
+  },
+  {
+    id: 5,
+    name: "FOOM Red Apple - Beverage Series",
+    category: "Liquid",
+    price: 110000,
+    stock: 35,
+    image: "/products/red-apple-foom.png",
+  },
+  {
+    id: 6,
+    name: "FOOM Green Kiwi - Beverage Series",
+    category: "Liquid",
+    price: 110000,
+    stock: 28,
+    image: "/products/green-kiwi-foom.png",
+  },
+  {
+    id: 7,
+    name: "FOOM Icy Menthol - Cigarette Series",
+    category: "Liquid",
+    price: 110000,
+    stock: 42,
+    image: "/products/liquid-icy-menthol-cig-series.png",
+  },
+  {
+    id: 8,
+    name: "FOOM Strawberry Ice Cream - Ice Cream Series",
+    category: "Liquid",
+    price: 110000,
+    stock: 20,
+    image: "/products/liquid-strawberry-ice-cream.png",
+  },
+  {
+    id: 9,
+    name: "FOOM Matcha Latte - Beverage Series",
+    category: "Liquid",
+    price: 110000,
+    stock: 2,
+    image: "/products/matcha-latte-foom.png",
+  },
+  {
+    id: 10,
+    name: "FOOM Refillable Cartridge Y 0.8 - 3pcs",
+    category: "Cartridge",
+    price: 110000,
+    stock: 0,
+    image: "/products/refillable-cartridge-y-3pcs.webp",
+  },
+];

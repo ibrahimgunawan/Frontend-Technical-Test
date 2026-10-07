@@ -1,0 +1,77 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #f4f4f2;
+  --card: #ffffff;
+  --foreground: #141414;
+  --muted-foreground: #6b6b66;
+  --border: #e4e4df;
+  --accent: #8dc63f;
+  --accent-foreground: #141414;
+  --accent-text: #4f7a14;
+  --chrome: #141414;
+  --chrome-foreground: #f4f4f2;
+  --destructive: #dc2626;
+  --radius: 4px;
+}
+
+.dark {
+  --background: #121312;
+  --card: #1a1c1a;
+  --foreground: #ececea;
+  --muted-foreground: #9a9a94;
+  --border: #2a2c2a;
+  --accent: #a3d84a;
+  --accent-foreground: #141414;
+  --accent-text: #a3d84a;
+  --chrome: #0b0c0b;
+  --chrome-foreground: #ececea;
+  --destructive: #ef4444;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent-text: var(--accent-text);
+  --color-chrome: var(--chrome);
+  --color-chrome-foreground: var(--chrome-foreground);
+  --color-destructive: var(--destructive);
+
+  --font-sans: var(--font-barlow), ui-sans-serif, system-ui, sans-serif;
+  --font-heading: var(--font-barlow-condensed), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: 4px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+  --radius: 4px;
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+/* Sonner Notification Header Custom Styling */
+[data-sonner-toast] [data-title] {
+  color: var(--accent-text) !important;
+  font-family: var(--font-heading), sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 0.875rem !important;
+  letter-spacing: 0.025em !important;
+}
+
+[data-sonner-toast] [data-icon] svg {
+  color: var(--accent-text) !important;
+}
